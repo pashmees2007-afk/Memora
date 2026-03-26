@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+knowledge.db
+flask_output.log
+files.zip
+.env
+.DS_Store
+*.log
