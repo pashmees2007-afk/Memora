@@ -1,0 +1,7 @@
+
+# Personal Knowledge Web Archiver - Sample URL List
+# Add one URL per line. Lines starting with # are ignored.
+
+https://en.wikipedia.org/wiki/Python_(programming_language)
+https://en.wikipedia.org/wiki/Machine_learning
+https://en.wikipedia.org/wiki/World_Wide_Web
