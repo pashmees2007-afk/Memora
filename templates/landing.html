@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memora — Never lose a great link again.</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <div class="logo-icon"></div>
+                Memora
+            </a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search your saved knowledge">
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#docs">Docs</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="/app">Login</a>
+                <a href="/app" class="btn-get-started">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1 id="hero-headline">Never lose a great link again.</h1>
+        <p>Memora turns scattered bookmarks into a searchable memory archive.</p>
+        
+        <div class="card-grid">
+            <!-- Card 1 -->
+            <div class="card float-1">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&auto=format&fit=crop'); background-size: cover;"></div>
+                <div class="card-content">
+                    <div class="card-title">Complete Guide to React useEffect</div>
+                    <div class="card-domain">stackoverflow.com</div>
+                    <div class="card-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card float-2">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&auto=format&fit=crop'); background-size: cover;"></div>
+                <div class="card-content">
+                    <div class="card-title">Awesome Machine Learning Resources</div>
+                    <div class="card-domain">github.com</div>
+                    <div class="card-tags">
+                        <span class="tag">AI</span>
+                        <span class="tag">Machine Learning</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card float-3">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1586717791821-3f44a563dc4c?w=400&auto=format&fit=crop'); background-size: cover;"></div>
+                <div class="card-content">
+                    <div class="card-title">Minimal UI Design Principles</div>
+                    <div class="card-domain">medium.com</div>
+                    <div class="card-tags">
+                        <span class="tag">UI</span>
+                        <span class="tag">Design</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="card float-1">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=400&auto=format&fit=crop'); background-size: cover;"></div>
+                <div class="card-content">
+                    <div class="card-title">Transformer Models Explained</div>
+                    <div class="card-domain">arxiv.org</div>
+                    <div class="card-tags">
+                        <span class="tag">AI Research</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="card float-2">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&auto=format&fit=crop'); background-size: cover;"></div>
+                <div class="card-content">
+                    <div class="card-title">Second Brain Note-Taking Method</div>
+                    <div class="card-domain">blog.example.com</div>
+                    <div class="card-tags">
+                        <span class="tag">Productivity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <p style="font-size: 12px; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px;">Explore how Memora works</p>
+            <div style="font-size: 24px;">↓</div>
+        </div>
+    </section>
+
+    <section id="features" class="section bg-muted">
+        <div class="container">
+            <div class="grid-3">
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Smart Bookmark Saving</h3>
+                    <p>Memora automatically captures preview, title, and metadata from every link you save.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Powerful Search</h3>
+                    <p>Find any saved article, code snippet, or resource instantly with semantic indexing.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏷️</div>
+                    <h3>Tag and Organize</h3>
+                    <p>Group bookmarks using tags, collections, and folders. Stay organized effortlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container" style="text-align: center;">
+            <h2>Simple Workflow</h2>
+            <div class="workflow-steps">
+                <div class="step">
+                    <div class="step-num">01</div>
+                    <h4>Save a link instantly</h4>
+                    <p>Paste any URL into Memora and we'll handle the rest.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">02</div>
+                    <h4>Organized automatically</h4>
+                    <p>Tags and previews are generated in real-time.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">03</div>
+                    <h4>Find it instantly later</h4>
+                    <p>Your research is always just a search away.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-muted">
+        <div class="container">
+            <h2 style="text-align: center;">Your Internet Memory</h2>
+            <div class="timeline-card">
+                <p style="color: var(--text-secondary);">In 2026, you've built a wealth of knowledge.</p>
+                <div class="timeline-stats">
+                    <div class="stat-item">
+                        <h4>312</h4>
+                        <p>Bookmarks saved</p>
+                    </div>
+                    <div class="stat-item">
+                        <p style="font-weight: 700; color: var(--text-primary);">Top Topics</p>
+                        <p>AI, Web Dev, Design</p>
+                    </div>
+                    <div class="stat-item">
+                        <p style="font-weight: 700; color: var(--text-primary);">Most Revisited</p>
+                        <p>React Hooks Guide</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container" style="text-align: center;">
+            <h2>Try saving a link</h2>
+            <div class="live-demo">
+                <p>Paste a link here to see how Memora captures it.</p>
+                <div class="input-group">
+                    <input type="text" id="demo-input" placeholder="https://example.com/blog-post">
+                    <button onclick="demoSave()">Save</button>
+                </div>
+                <div id="demo-result" style="margin-top: 30px; display: none;">
+                    <div class="card" style="max-width: 320px; margin: 0 auto; text-align: left;">
+                        <div class="card-img" id="demo-img" style="background-size: cover; background-position: center;"></div>
+                        <div class="card-content">
+                            <div class="card-title" id="demo-title">Loading...</div>
+                            <div class="card-domain" id="demo-domain">example.com</div>
+                            <div class="card-tags">
+                                <span class="tag">Saved!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Start building your internet memory.</h2>
+            <p>No clutter. Just the links that matter.</p>
+            <a href="/app" class="btn-get-started" style="display: inline-block; margin-top: 40px; padding: 18px 40px; font-size: 18px;">Get Started Free</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="/" class="logo">
+                    <div class="logo-icon"></div>
+                    Memora
+                </a>
+                <p style="margin-top: 20px; color: var(--text-secondary); font-size: 14px;">Your personal knowledge retrieval system.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Updates</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Guides</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Discord</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Rotating Headline
+        const headlines = [
+            "Never lose a great link again.",
+            "Find your next saved idea.",
+            "Rediscover your research instantly.",
+            "Your internet memory, organized."
+        ];
+        let index = 0;
+        const headlineEl = document.getElementById('hero-headline');
+
+        setInterval(() => {
+            headlineEl.style.opacity = 0;
+            setTimeout(() => {
+                index = (index + 1) % headlines.length;
+                headlineEl.textContent = headlines[index];
+                headlineEl.style.opacity = 1;
+            }, 500);
+        }, 4000);
+
+        headlineEl.style.transition = 'opacity 0.5s ease-in-out';
+
+        // Live Demo Simulation
+        function demoSave() {
+            const input = document.getElementById('demo-input').value;
+            const result = document.getElementById('demo-result');
+            const titleEl = document.getElementById('demo-title');
+            const domainEl = document.getElementById('demo-domain');
+            const imgEl = document.getElementById('demo-img');
+
+            if (!input) return;
+
+            result.style.display = 'block';
+            result.style.opacity = '0.5';
+            
+            setTimeout(() => {
+                let domain = "example.com";
+                try {
+                    domain = new URL(input).hostname;
+                } catch(e) {}
+                
+                titleEl.textContent = "Insights into " + domain.split('.')[0];
+                domainEl.textContent = domain;
+                imgEl.style.backgroundImage = "url('https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=400&auto=format&fit=crop')";
+                result.style.opacity = '1';
+                
+                // Scroll to result
+                result.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 800);
+        }
+    </script>
+</body>
+</html>
