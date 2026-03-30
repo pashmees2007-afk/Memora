@@ -188,7 +188,7 @@ nav {
 .card-img {
     width: 100%;
     aspect-ratio: 16/10;
-    background: var(--panel-bg);
+    background-color: var(--panel-bg);
     object-fit: cover;
 }
 
